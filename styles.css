@@ -9,6 +9,11 @@ nav {
     margin-bottom: 150px;
 }
 
+#cadeado_logo {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 nav h1 {
     color: #FFF;
     font-size: 24px;
@@ -17,18 +22,35 @@ nav h1 {
 
 nav ul {
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'JetBrains Mono', monospace;
     display: flex;
     gap: 48px;
+    list-style: none;
 }
 
+ul li :hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
 
 #page {
-    width: 1100px;
+    width: 1200px;
     justify-content: center;
     margin: 0 auto;
-    
+
 }
 
 main {
@@ -36,19 +58,43 @@ main {
 }
 
 #note {
-    margin-right: 82px;
+    width: 500px;
+    height: 385px;
+}
+
+#note {
+    margin-right: 95px;
 }
 
 section h1 {
     font-size: 36px;
     color: #FFF;
     font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 60px;
 }
+
+section h1 span {
+    color: #00BFA6;
+}
+
 
 section p {
     color: #C2C2C2;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+section p span {
+    color: #00BFA6;
+}
+
+hr {
+    width: 650px;
+    border-color: #00BFA6;
+    margin-top: 150px;
 }
 
 footer {
@@ -56,19 +102,29 @@ footer {
     justify-content: center;
     display: flex;
     position: absolute;
-    width: 1100px;
+    width: 1200px;
     bottom: 0;
-    
-    
+
+
+}
+
+footer p {
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #FFF;
+    margin-bottom: 25px;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 #cadeado {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-footer img {
-    text-align: center;
-    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
